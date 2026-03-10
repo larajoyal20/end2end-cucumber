@@ -1,0 +1,119 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "placing-the-order;end-to-end-test",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "End to End test",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 503866599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to login page",
+            "match": {
+              "location": "steps_defination\\steps.ts:5"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2535706500,
+              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://rahulshettyacademy.com/client/#/auth/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.goto (D:\\end2end-cucumber\\cartClassTypeScript\\loginPage.ts:19:25)\n    at AllureCucumberWorld.<anonymous> (D:\\end2end-cucumber\\steps_defination\\steps.ts:8:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user logs in with email \"youremail\" and password \"yourpassword\"",
+            "match": {
+              "location": "steps_defination\\steps.ts:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user adds product \"ADIDAS ORIGINAL\" to the cart",
+            "match": {
+              "location": "steps_defination\\steps.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user buys the product from the cart",
+            "match": {
+              "location": "steps_defination\\steps.ts:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user fills payment details with card \"1234567890123456\", month \"03\", year \"31\", ccv \"332\", country \"India\", name \"joyallara thangarasu\"",
+            "match": {
+              "location": "steps_defination\\steps.ts:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user should see order confirmation",
+            "match": {
+              "location": "steps_defination\\steps.ts:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 239850300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "placing-the-order",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Placing the order",
+    "tags": [],
+    "uri": "features\\endtoEnd.feature"
+  }
+]

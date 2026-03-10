@@ -1,0 +1,29 @@
+{
+  "name": "wh-end2end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --exit --format json:reports/cucumber-report.json --format allure-cucumberjs/reporter",
+    "report:html": "node report.js",
+    "report:allure": "allure serve allure-results",
+    "report": "npm run report:html && npm run report:allure",
+    "test:report": "npm run test && npm run report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.4.0",
+    "allure-commandline": "^2.37.0",
+    "allure-cucumberjs": "^3.6.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.7.0"
+  }
+}
